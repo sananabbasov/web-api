@@ -1,0 +1,17 @@
+D:\web\Hediyye\Business\bin\Debug\net5.0\Business.deps.json
+D:\web\Hediyye\Business\bin\Debug\net5.0\Business.dll
+D:\web\Hediyye\Business\bin\Debug\net5.0\ref\Business.dll
+D:\web\Hediyye\Business\bin\Debug\net5.0\Business.pdb
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.csproj.AssemblyReference.cache
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.AssemblyInfoInputs.cache
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.AssemblyInfo.cs
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.csproj.CoreCompileInputs.cache
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.dll
+D:\web\Hediyye\Business\obj\Debug\net5.0\ref\Business.dll
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.pdb
+D:\web\Hediyye\Business\bin\Debug\net5.0\DataAccess.dll
+D:\web\Hediyye\Business\bin\Debug\net5.0\Entities.dll
+D:\web\Hediyye\Business\bin\Debug\net5.0\DataAccess.pdb
+D:\web\Hediyye\Business\bin\Debug\net5.0\Entities.pdb
+D:\web\Hediyye\Business\obj\Debug\net5.0\Business.csproj.CopyComplete
