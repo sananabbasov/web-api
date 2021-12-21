@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(GiftDbContext))]
-    [Migration("20211220083731_Initial")]
+    [Migration("20211221084136_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -59,16 +59,20 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Entities.Concrete.ProductCategory", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.HasKey("CategoryId", "ProductId");
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("ProductId");
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IRepository<T>
+    public interface IRepository<T> // Product, Category, User, Messages
     {
         T GetById(int id);
         List<T> GetAll();

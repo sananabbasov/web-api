@@ -22,10 +22,10 @@ namespace DataAccess.Concrete.EntityFramework
 
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<ProductCategory>()
-                .HasKey(c => new { c.CategoryId, c.ProductId });
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<ProductCategory>()
+        //        .HasKey(c => new { c.CategoryId, c.ProductId });
+        //}
     }
 }

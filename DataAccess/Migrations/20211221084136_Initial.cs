@@ -38,13 +38,14 @@ namespace DataAccess.Migrations
                 name: "ProductCategory",
                 columns: table => new
                 {
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
-                    ProductId = table.Column<int>(type: "int", nullable: false),
                     Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductCategory", x => new { x.CategoryId, x.ProductId });
+                    table.PrimaryKey("PK_ProductCategory", x => x.Id);
                     table.ForeignKey(
                         name: "FK_ProductCategory_Categories_CategoryId",
                         column: x => x.CategoryId,
@@ -58,6 +59,11 @@ namespace DataAccess.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductCategory_CategoryId",
+                table: "ProductCategory",
+                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductCategory_ProductId",

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     [ApiController]
     public class ProductsController : ControllerBase
     {
@@ -15,7 +15,7 @@ namespace WebAPI.Controllers
             _productService = productService;
         }
 
-        [HttpGet("getall")]
+        [HttpGet("getallproduct")]
         public IActionResult GetAll()
         {
 
